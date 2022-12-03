@@ -88,11 +88,13 @@ input::placeholder {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 .nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -108,5 +110,15 @@ a {
   color: white;
   padding: 10px 8px;
   border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+  form{
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 </style>
